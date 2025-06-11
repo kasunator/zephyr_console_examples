@@ -1,0 +1,26 @@
+
+# Manifest file for the Application
+manifest:
+
+
+  projects:
+    - name: zephyr_3.7.x
+      path: zephyr
+      revision: 3b47ec6410f29eafa80adae1005709a23d573ba3
+      import: # Projects to import from the main zephyr west.yml
+        name-allowlist:
+          - cmsis
+          - segger
+
+    - name: zephyr-hal-stm32
+      revision: f1317150eac951fdd8259337a47cbbc4c2e6d335
+      path: modules/hal/stm32
+      
+    - name: hal_nxp
+      revision: cae40020064894f67b00215dad2baf7c743e1dfb
+      path: modules/hal/nxp
+      groups:
+        - hal
+
+  self:
+    path: app
