@@ -8,8 +8,8 @@ manifest:
     remote: zephyrproject-rtos
   projects:
     - name: zephyr
-      revision: v3.4.0  # Specify the Zephyr version
-      west-commands: scripts/west-commands.yml
+      remote: zephyrproject-rtos
+      revision: main
     # Add other projects/modules as needed, e.g., MCUBoot:
     # - name: mcuboot
     #   revision: v1.9.0
