@@ -1,12 +1,17 @@
 
 # Manifest file for the Application
 manifest:
+  defaults:
+    remote: zephyrproject-rtos
 
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos/
 
   projects:
-    - name: zephyr_3.7.x
+    - name: zephyr
       path: zephyr
-      revision: 3b47ec6410f29eafa80adae1005709a23d573ba3
+      revision: 9f824289b28d7aea2eee74f62787c385a5005453
       import: # Projects to import from the main zephyr west.yml
         name-allowlist:
           - cmsis
