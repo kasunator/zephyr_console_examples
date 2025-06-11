@@ -10,6 +10,7 @@ manifest:
     - name: zephyr
       remote: zephyrproject-rtos
       revision: main
+      path: zephyr
     # Add other projects/modules as needed, e.g., MCUBoot:
     # - name: mcuboot
     #   revision: v1.9.0
