@@ -11,6 +11,16 @@ manifest:
       remote: zephyrproject-rtos
       revision: main
       path: zephyr
+      
+    - name: zephyr-hal-stm32
+      revision: f1317150eac951fdd8259337a47cbbc4c2e6d335
+      path: modules/hal/stm32
+      
+    - name: hal_nxp
+      revision: cae40020064894f67b00215dad2baf7c743e1dfb
+      path: modules/hal/nxp
+      groups:
+        - hal
     # Add other projects/modules as needed, e.g., MCUBoot:
     # - name: mcuboot
     #   revision: v1.9.0
